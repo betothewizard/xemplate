@@ -1,29 +1,40 @@
-# Vite+ Monorepo Starter
+# xemplate
 
-A starter for creating a Vite+ monorepo.
+a pre-configured monorepo running on vite+. you code, it works.
 
-## Development
+- `apps/web` - the frontend
+- `packages/utils` - shared typescript package
 
-- Check everything is ready:
+## setup
+
+install dependencies:
+
+```bash
+vp i
+```
+
+spin up the dev server:
+
+```bash
+vp run dev
+```
+
+## pipeline
+
+check formatting, lint, and run tests:
 
 ```bash
 vp run ready
 ```
 
-- Run the tests:
+manually run tests:
 
 ```bash
 vp run -r test
 ```
 
-- Build the monorepo:
+build the monorepo:
 
 ```bash
 vp run -r build
-```
-
-- Run the development server:
-
-```bash
-vp run dev
 ```
